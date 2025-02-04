@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gestione recensioni</title>
+</head>
+<body>
+    <form action="risultato.php" method="POST">
+        ID Recensione:
+        <input type="text" id="id_recensione" name="id_recensione" required>
+
+        Operazione:
+        <input type="radio" id="elimina" name="operazione" value="elimina" required>
+        Elimina Recensione<br>
+        <input type="radio" id="aggiorna" name="operazione" value="aggiorna" required>
+        Aggiorna Recensionw<br>
+
+        Nuovo Voto (1-10):
+        <input type="number" id="nuovo_voto" name="nuovo_voto" min="1" max="10" 
+               style="display: none;" disabled>
+        
+        <input type="submit" value="Esegui Operazione">
+    </form>
+    
+</body>
+</html>
