@@ -6,21 +6,21 @@
     <title>gestione recensioni</title>
 </head>
 <body>
+    <form action="risultato.php" method="post">
         ID Recensione:
-        <input type="text" id="id_recensione" name="id_recensione" required>
+        <input type="text" id="id_recensione" name="id_recensione" required><br>
 
-    <form action="elimina.php" method="POST"></form>
-        Operazione:
+        Operazione: <br>
         <input type="radio" id="elimina" name="operazione" value="elimina" required>
+
         Elimina Recensione<br>
         <input type="radio" id="aggiorna" name="operazione" value="aggiorna" required>
         
-    <form action="aggiorna.php" method="POST">
         Aggiorna Recensione<br>
+        Nuovo Voto (1-10): <br>
 
-        Nuovo Voto (1-10):
-        <input type="number" id="nuovo_voto" name="nuovo_voto" min="1" max="10" 
-               style="display: none;" disabled>
+        <input type="number" id="voto" name="voto" ><br>
+        <input type="number" id="nuovo_voto" name="nuovo_voto" min="1" max="10" style="display: none;" disabled> 
         
         <input type="submit" value="Esegui Operazione">
     </form>
